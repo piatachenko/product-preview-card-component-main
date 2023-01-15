@@ -94,8 +94,10 @@ button:active {
 
 @media (min-width: 600px) {
   .item {
-    display: grid;
-    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .preview {
@@ -103,7 +105,6 @@ button:active {
     height: 400px;
     width: 550px;
     margin: auto;
-    align-items: center;
   }
 
   .previewMobileImage {
@@ -117,6 +118,10 @@ button:active {
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+
+  .productDetails {
+    margin: auto;
   }
 
   .productName {
